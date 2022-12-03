@@ -27,41 +27,25 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-white-color);
     color: var(--primary-Text-color);
+    width: 1440px;
+    margin-left: 15px;
+    margin-right: 15px;
+   
 }
 
- /* Логотип */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
  
-  .logo{
-    Font-family: 'Raleway', sans-serif;
-
-font-weight: 700;
-font-size: 18px;
-line-height: 1.3;
-letter-spacing: 0.03em;
-text-decoration: none;
-text-transform: uppercase;
-
- }
-.primary-text{
-    letter-spacing: 0.02em;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.web{
-    color: var(--Primary-Brand-color);
- }
-.studio{
-    color: var(--dark-color);
-}
-    
 /* прибрав точки в списку */
 
 ul{
     list-style: none;
     }
 
-    a {
+a {
         text-decoration: none;
     }
 
@@ -79,59 +63,143 @@ ul{
   overflow: hidden;
 }
 
+    /* контейнер  */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto; 
+     align-items: center;
+
+}
+
+
+
+    /* шапка */
+.header {
+    
+  
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08)
+  }
+
+
+
+ /* Логотип */
+ 
+  .logo{
+    Font-family: 'Raleway', sans-serif;
+
+font-weight: 700;
+font-size: 18px;
+line-height: 1.3;
+letter-spacing: 0.03em;
+text-decoration: none;
+text-transform: uppercase;
+margin-right: 77px;
+
+ }
+.primary-text{
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.web{
+    color: var(--Primary-Brand-color);
+ }
+.studio{
+    color: var(--dark-color);
+}
+   
+
 
     /* шапка з контактами */
 .site-nav{
  
+display: flex;
+
 font-weight: 700;
 font-size: 16px;
 line-height: 1.15;
-
-}
+margin-left: auto;}
 
  .site-nav .link{
+    display: block;
     color: var(--dark-color);
-    text-decoration: none
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+ 
 
  }
 
  .site-nav .link:hover, .site-nav .link:focus{
    color: var(--Primary-Brand-color);
+
  }
 
 
 .site-nav .link-current{
+    display: block;
     color: var(--Primary-Brand-color);
-    text-decoration: none
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.site-nav .item + .item {
+    margin-left: 40px;
 }
 
 
-.contacts{
-    color: var(--primary-Text-color);
+
+.contact{
+color: var(--primary-Text-color);
 
 
 font-size: 16px;
 line-height: 1.15;
 text-decoration: none;
 }
-.contacts:hover, .contacts:focus{
+.contact:hover, .contact:focus{
     color: var(--Primary-Brand-color);
 }
 
 .hero{
+
     background-color: var(--dark-color);
-        letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
+       text-align: center;
+       padding: 192px 474px;
+       
 }
 
 .hero-title{
-    color: var(--primary-white-color);
+     
+max-width: 492px;
+
+
+color: var(--primary-white-color);
  
-font-weight: 700;
+font-weight: 500;
 font-size: 56px;
 line-height: 1.07;
+padding-bottom: 48px;
 
-text-align: center;
+
+
 letter-spacing: 0.02em;
+
+
+
+}
+
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 /* заголовки  */
@@ -142,10 +210,12 @@ letter-spacing: 0.02em;
 }
 
 .selection-title{
-    
+    padding-bottom: 72px;
+
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
+text-align: center;
 
 
 text-transform: capitalize;
@@ -155,39 +225,92 @@ text-transform: capitalize;
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
+margin-bottom: 8px;
 
+}
+
+    /* ф'ючерси */
+
+.futures{
+      display: flex;
+      padding-bottom: 0;
+ }
+
+.futures-list {
+    
+     width: 264px;
+    margin-right: 24px;
+   
+}
+.futures-list:last-child{
+    margin-right: 0;
+}
+
+    /*роботи студії  */
+
+.works{
+    margin-right: 24px;
+}
+.works:last-child{
+    margin-right: 0;
 }
 
 
     /* Our team */
 
 .partner{
+ 
     background-color: var(--primary-white-color);
+  
 }
 .team{
-    background-color: var(--Light-color);
+    background-color: var(--Light-color); 
 }
+
+
+.workers{
+    display: flex;
+    gap: 24px;
+
+}   
+.worker-info{
+    text-align: center;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+  }
+.worker-card{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
 
     /* Кнопки */
 
 
-.button-primary{
+.button-primary {
+
+    border: none;
+    border-radius: 4px;
+     Padding: 16px 32px;
+        
 
     color: var(--primary-white-color);
     background-color: var(--Primary-Brand-color);
 
 
     font-weight: 700;
-font-size: 16px;
-line-height: 1.19;
+    font-size: 16px;
+    line-height: 1.19;
 
-letter-spacing: 0.04em;
+    letter-spacing: 0.04em;
 
     font-family: 'Roboto';
      font-style: 400;
     cursor: pointer;
 
- 
+
 }
 
 .button-primary:hover, 
@@ -197,7 +320,9 @@ letter-spacing: 0.04em;
 } 
 
 .button-secondary{
-   
+    border-radius: 4px;
+    Padding:8px 16px;
+    border: 1px var(--Accent-color);
     color: var(--Primary-Brand-color);
     background-color: var(--Light-color);
 
@@ -209,13 +334,45 @@ letter-spacing: 0.04em;
 
     font-family: 'Roboto';
      font-style: 400;
- cursor: pointer;
-
+    cursor: pointer;
 }
+
+
 .button-secondary:hover, 
 .button-secondary:focus{
     color: var(--primary-white-color);
     background-color: var(--Primary-Brand-color);
+}
+
+
+    /* сторінка портфоліо  */
+
+.filter{
+    display: flex;
+    justify-content: center;
+}
+
+.sort{
+    margin-right: 24px;
+    margin-bottom: 72px;
+}
+.sort:last-child{
+    margin-right: 0;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    }
+.project{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);}
+
+.project-description{
+   
+    padding-left: 16px;
+padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 
@@ -227,4 +384,13 @@ letter-spacing: 0.04em;
 }
 .footer .studio{
     color: var(--primary-white-color);
+}
+.footer-text{
+        letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 16px;
+}
+.footer-box{
+    padding: 100px 1020px 100px 156px;
 }
