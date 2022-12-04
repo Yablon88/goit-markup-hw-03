@@ -27,9 +27,8 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-white-color);
     color: var(--primary-Text-color);
-    width: 1440px;
-    margin-left: 15px;
-    margin-right: 15px;
+ 
+
    
 }
 
@@ -66,14 +65,13 @@ a {
     /* контейнер  */
 
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
    margin-left: auto;
    margin-right: auto; 
-     align-items: center;
+   /* більше нічого не додавати!!! */
 
 }
 
@@ -81,11 +79,14 @@ a {
 
     /* шапка */
 .header {
-    
-  
+
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08)
   }
+.header-info{
+display: flex;
+align-items: center;
 
+}
 
 
  /* Логотип */
@@ -125,7 +126,8 @@ display: flex;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.15;
-margin-left: auto;}
+margin-left: auto;
+}
 
  .site-nav .link{
     display: block;
@@ -173,7 +175,7 @@ text-decoration: none;
     background-color: var(--dark-color);
     letter-spacing: 0.02em;
        text-align: center;
-       padding: 192px 474px;
+       padding: 192px 0;
        
 }
 
@@ -187,8 +189,8 @@ color: var(--primary-white-color);
 font-weight: 500;
 font-size: 56px;
 line-height: 1.07;
-padding-bottom: 48px;
-
+margin: 0 auto;
+margin-bottom: 48px;
 
 
 letter-spacing: 0.02em;
@@ -210,7 +212,7 @@ letter-spacing: 0.02em;
 }
 
 .selection-title{
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 
 font-weight: 700;
 font-size: 36px;
@@ -233,7 +235,7 @@ margin-bottom: 8px;
 
 .futures{
       display: flex;
-      padding-bottom: 0;
+  padding-bottom: 0;
  }
 
 .futures-list {
@@ -261,8 +263,11 @@ margin-bottom: 8px;
 .partner{
  
     background-color: var(--primary-white-color);
-  
-}
+ }
+
+ .partner img{
+    display: block;
+ }
 .team{
     background-color: var(--Light-color); 
 }
@@ -321,7 +326,7 @@ border-radius: 0px 0px 4px 4px;
 
 .button-secondary{
     border-radius: 4px;
-    Padding:8px 16px;
+    Padding:12px 24px;
     border: 1px var(--Accent-color);
     color: var(--Primary-Brand-color);
     background-color: var(--Light-color);
@@ -350,11 +355,12 @@ letter-spacing: 0.04em;
 .filter{
     display: flex;
     justify-content: center;
+    margin-bottom: 72px;
 }
 
 .sort{
     margin-right: 24px;
-    margin-bottom: 72px;
+   
 }
 .sort:last-child{
     margin-right: 0;
@@ -368,17 +374,23 @@ letter-spacing: 0.04em;
 .project{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);}
 
+    .project img{
+        display: block;
+    }
 .project-description{
    
     padding-left: 16px;
 padding-top: 16px;
     padding-bottom: 16px;
+    border:0.5px solid var(--Light-color) ;
+    border-top: none;
 }
 
 
     /* footer */
 .footer{
-
+    padding-top: 100px;
+    padding-bottom: 100px;
     color: var(--Accent-color);
     background-color: var(--dark-color);
 }
@@ -386,11 +398,9 @@ padding-top: 16px;
     color: var(--primary-white-color);
 }
 .footer-text{
+    max-width: 264px;
         letter-spacing: 0.02em;
     font-size: 16px;
     line-height: 1.5;
-    padding-top: 16px;
-}
-.footer-box{
-    padding: 100px 1020px 100px 156px;
+    margin-top: 16px;
 }
